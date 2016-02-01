@@ -58,7 +58,7 @@ h1 {
 }
 
 .btn1:focus {
-  animation: gun .25s ease-in-out forwards;
+  animation: gun 10s ease-in-out forwards;
 }
 
 @keyframes gun {

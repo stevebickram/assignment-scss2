@@ -40,8 +40,8 @@ h1 {
 }
 
 .btn1:focus {
-    animation: gun .25s ease-in-out forwards;
-}
+@include pow($time)
+	}
 @keyframes gun {
     0% {
      left: 5em;   
