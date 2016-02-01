@@ -1,3 +1,8 @@
 @mixin pow($duration){
     animation: gun $duration ease-in-out forwards;
 }
+@mixin flip($spin){
+	transform: rotate($spin);
+	top: 1.8em;
+	left: 10em;
+}

@@ -37,21 +37,22 @@ h1 {
 	font-size: 500%;
 	top: 3em;
 	color: black;
-}
-
-.btn1:focus {
-@include pow($time)
-	}
-@keyframes gun {
-    0% {
-     left: 5em;   
-    }
-    50% {
-	 left:4.5em;
-	}
-	100% {
-      left: 5em;
-    }
+	
+	&:focus {
+		@include pow($time);
+			}
+		@keyframes gun {
+			0% {
+			 left: 5em;   
+			}
+			50% {
+			 left:4.5em;
+			}
+			100% {
+			  left: 5em;
+			}
+		}
+	
 }
 
 .can {
@@ -65,20 +66,18 @@ h1 {
 
 .btn1:focus ~ #can	{
     animation: can 1s ease-in-out forwards;
-}
+
 @keyframes can {
     0% { 
-    transform: rotate(0deg);
-	top: 1.8em;
-	left: 10em;
+@include flip($flip);
     }
 	30% {
 	top: 0em;
 	left: 10em;
 }	
 	100% {
-    transform: rotate(720deg);
-	top: 1.8em;
-	left: 10em;
+@include flip(720deg);
+
 	}
+}
 }

@@ -1,3 +1,4 @@
+/* changes time of gun recoil */
 @-moz-viewport {
   width: device-width;
   scale: 1;
@@ -58,7 +59,7 @@ h1 {
 }
 
 .btn1:focus {
-  animation: gun 10s ease-in-out forwards;
+  animation: gun 0.25s ease-in-out forwards;
 }
 
 @keyframes gun {
