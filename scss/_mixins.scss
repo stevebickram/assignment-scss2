@@ -6,3 +6,6 @@
 	top: 1.8em;
 	left: 10em;
 }
+@mixin place($mid){
+	margin: 0 $mid;
+}

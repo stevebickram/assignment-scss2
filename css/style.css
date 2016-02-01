@@ -1,4 +1,6 @@
 /* changes time of gun recoil */
+/* changes can rotation */
+/* centers object */
 @-moz-viewport {
   width: device-width;
   scale: 1;
@@ -38,7 +40,7 @@ html {
 }
 
 .header {
-  text-align-last: center;
+  text-align: center;
   display: block;
   position: relative;
 }
@@ -74,15 +76,6 @@ h1 {
   }
 }
 
-.can {
-  text-decoration: none;
-  font-size: 500%;
-  position: relative;
-  left: 10em;
-  top: 1.8em;
-  transform-origin: left;
-}
-
 .btn1:focus ~ #can {
   animation: can 1s ease-in-out forwards;
 }
@@ -102,4 +95,13 @@ h1 {
     top: 1.8em;
     left: 10em;
   }
+}
+
+.can {
+  text-decoration: none;
+  font-size: 500%;
+  position: relative;
+  left: 10em;
+  top: 1.8em;
+  transform-origin: left;
 }

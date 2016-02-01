@@ -19,13 +19,13 @@ html {
 }
 
 .header {
-	text-align-last: center;
+	text-align: center;
 	display: block;
 	position: relative;
 }
 h1 {
 	font-size: 250%;
-	margin: 0 auto;
+	@include place($mid);
 }
 
 
@@ -46,38 +46,36 @@ h1 {
 			 left: 5em;   
 			}
 			50% {
-			 left:4.5em;
+			 left: 4.5em;
 			}
 			100% {
-			  left: 5em;
+			 left: 5em;
 			}
 		}
-	
+		&:focus ~ #can	{
+		animation: can 1s ease-in-out forwards;
+	}
+		@keyframes can {
+			0% { 
+		@include flip($flip);
+			}
+			30% {
+			top: 0em;
+			left: 10em;
+		}	
+			100% {
+		@include flip(720deg);
+
+			}
+	}
 }
 
 .can {
 	text-decoration: none;
 	font-size: 500%;
 	position: relative;
-	left:10em;
+	left: 10em;
 	top: 1.8em;
 	transform-origin: left;
 }
 
-.btn1:focus ~ #can	{
-    animation: can 1s ease-in-out forwards;
-
-@keyframes can {
-    0% { 
-@include flip($flip);
-    }
-	30% {
-	top: 0em;
-	left: 10em;
-}	
-	100% {
-@include flip(720deg);
-
-	}
-}
-}
