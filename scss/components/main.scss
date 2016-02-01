@@ -1,0 +1,84 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+    font-family: sans-serif;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.header {
+	text-align-last: center;
+	display: block;
+	position: relative;
+}
+h1 {
+	font-size: 250%;
+	margin: 0 auto;
+}
+
+
+.btn1 {
+	text-decoration: none;
+	width: 5em;
+	position: relative;
+	left: 5em;
+	font-size: 500%;
+	top: 3em;
+	color: black;
+}
+
+.btn1:focus {
+    animation: gun .25s ease-in-out forwards;
+}
+@keyframes gun {
+    0% {
+     left: 5em;   
+    }
+    50% {
+	 left:4.5em;
+	}
+	100% {
+      left: 5em;
+    }
+}
+
+.can {
+	text-decoration: none;
+	font-size: 500%;
+	position: relative;
+	left:10em;
+	top: 1.8em;
+	transform-origin: left;
+}
+
+.btn1:focus ~ #can	{
+    animation: can 1s ease-in-out forwards;
+}
+@keyframes can {
+    0% { 
+    transform: rotate(0deg);
+	top: 1.8em;
+	left: 10em;
+    }
+	30% {
+	top: 0em;
+	left: 10em;
+}	
+	100% {
+    transform: rotate(720deg);
+	top: 1.8em;
+	left: 10em;
+	}
+}
